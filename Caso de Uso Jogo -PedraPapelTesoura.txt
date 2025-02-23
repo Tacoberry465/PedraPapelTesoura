@@ -1,0 +1,31 @@
+Caso de Uso 1: Jogar
+Ator: Jogador
+
+Objetivo: Permitir que o jogador escolha pedra, papel ou tesoura, enquanto o sistema (máquina) escolhe aleatoriamente, e o resultado (vitória, derrota ou empate) seja exibido e registrado em um banco de dados.
+
+Fluxo Principal:
+
+O jogador inicia o jogo na interface principal.
+O jogador seleciona uma das três opções (pedra, papel ou tesoura) clicando na imagem correspondente.
+O sistema gera uma jogada aleatória para a máquina.
+O sistema compara a jogada do jogador com a jogada da máquina.
+O sistema exibe o resultado (Vitória, Derrota ou Empate) e registra esse resultado em banco de dados.
+O jogador pode repetir o processo quantas vezes quiser.
+Fluxos Alternativos / Exceções:
+
+Não há muitas variações, pois o jogo é simples e não permite entradas inválidas.
+Caso a conexão com o banco de dados falhe, deve ser exibida uma mensagem de erro ao usuário (por exemplo, “Não foi possível registrar o resultado. Verifique a conexão com o banco de dados.”).
+Caso de Uso 2: Consultar Histórico
+Ator: Jogador
+
+Objetivo: Permitir que o jogador consulte seu histórico de partidas e verifique sua porcentagem de vitórias.
+
+Fluxo Principal:
+
+O jogador clica no botão “Consultar Histórico” na interface principal.
+O sistema acessa o banco de dados e obtém o número de partidas jogadas e o número de vitórias.
+O sistema calcula a porcentagem de vitórias ( (número de vitórias / número de partidas) * 100 ).
+O sistema exibe o resultado para o jogador.
+Fluxos Alternativos / Exceções:
+
+Se o banco de dados estiver inacessível ou não houver registros, deve ser exibida uma mensagem de erro ou aviso apropriado.
