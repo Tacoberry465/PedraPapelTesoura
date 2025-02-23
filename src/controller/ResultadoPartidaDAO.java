@@ -17,7 +17,7 @@ public class ResultadoPartidaDAO {
     // Ajuste conforme seu ambiente
     private static final String URL  = "jdbc:mysql://localhost:3306/jogo_pedra_papel_tesoura";
     private static final String USER = "root";       // usuário do MySQL
-    private static final String PASS = "X1a7b2605***";       // senha do MySQL
+    private static final String PASS = "Digite aqui a senha do seu MySQL";       // senha do MySQL
 
     public void inserirResultado(ResultadoPartida partida) {
         String sql = "INSERT INTO historico (data_jogo, jogada_jogador, jogada_maquina, resultado) VALUES (?, ?, ?, ?)";
